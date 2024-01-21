@@ -9,7 +9,7 @@
  *
  * ------------------------------------- */
 #include "mychar.h"
-
+#include <assert.h>
 /**
  *  add your comment
  */
@@ -37,6 +37,6 @@ char case_flip(char c) {
  *  add your comment
  */
 int char_to_int(char c) {
- assert((c >= '0' && c <= '9'), "Not a valid digit");
+ assert((c >= '0' && c <= '9'));
  return c - '0';
 }
