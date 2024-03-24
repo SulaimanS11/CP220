@@ -3,6 +3,9 @@
         "mysort.h": "c",
         "stdio.h": "c",
         "typeinfo": "c",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "AVL.H": "cpp",
+        "expression_symbol.h": "c",
+        "string.h": "c"
     }
 }
