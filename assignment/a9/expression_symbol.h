@@ -23,4 +23,28 @@ int evaluate_postfix(QUEUE queue);
 
 HASHDATA evaluate_statement(HASHTABLE *ht, char* statement);
 
+typedef struct stack {
+  int length;  
+  NODE *top;
+} STACK;
+
+/* 
+ * Push a node into a linked list stack
+ * @param STACK *sp - pointer to the stack 
+ * @param NODE *np - pointer to the node.
+*/ 
+void push(STACK *sp, NODE *np);
+
+/* 
+ * Pop and return the pointer of the removed top node
+ * @param STACK *sp - pointer to the stack
+ * @return - the reference of the removed node and set it's next to NULL  
+*/ 
+NODE *pop(STACK *sp); 
+
+/*
+ * clean the linked list stack
+ */ 
+void clean_stack(STACK *sp);
+
 #endif

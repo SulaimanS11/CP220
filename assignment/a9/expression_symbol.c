@@ -62,8 +62,9 @@ QUEUE infix_to_postfix_symbol(HASHTABLE *ht, char *infixstr) {
       }
       *(sp+1) = '\0';
       
-     // your code, get the value of the symobol from the hash table, then enqueue the value
-     
+    QUEUE queue = {0};
+    STACK stack = {0};
+    return queue;
     }
     p++;
   }
@@ -76,7 +77,12 @@ QUEUE infix_to_postfix_symbol(HASHTABLE *ht, char *infixstr) {
 }
 
 int evaluate_infix_symbol(HASHTABLE *ht, char *infixstr) {
-// your code
+  QUEUE postfix = infix_to_postfix_symbol(ht, infixstr);
+  int value = evaluate_postfix(postfix);
+  
+  clean_queue(&postfix);
+  
+  return value;
 }
 
 

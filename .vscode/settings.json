@@ -6,6 +6,7 @@
         "cstdlib": "c",
         "AVL.H": "cpp",
         "expression_symbol.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "common.h": "c"
     }
 }
